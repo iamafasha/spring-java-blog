@@ -3,6 +3,9 @@ package com.iamafasha.post.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+import java.util.Set;
+
 @Entity
 public class User {
     @Id
@@ -18,4 +21,8 @@ public class User {
     public String name;
 
     public String password;
+
+    @OneToMany(mappedBy = "user")
+    public List<Post> posts;
+
 }
