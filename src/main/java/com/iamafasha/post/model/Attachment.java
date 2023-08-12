@@ -8,15 +8,4 @@ public class Attachment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(unique = true)
-    public String username;
-
-    @Column(unique = true)
-    public String email;
-
-    public String name;
-
-    public String password;
-
-
 }
